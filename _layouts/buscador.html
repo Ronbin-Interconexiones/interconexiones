@@ -1,0 +1,15 @@
+---
+layout: default
+---
+{{content}}
+{% include footer.html %}
+<!-- Script pointing to search-script.js -->
+<script src="{{site.baseurl}}/js/search-script.js"></script>
+<!-- Buscador -->
+<script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '{{site.baseurl}}/search.json'
+  })
+</script>

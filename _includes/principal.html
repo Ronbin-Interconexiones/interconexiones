@@ -1,0 +1,47 @@
+<section class="principal">
+  <h2>Los más pedidos de San Agustín</h2>
+
+  {% for galeria in site.data.principal %}
+  <article>
+    <h3>{{ galeria.title }}</h3>
+    <img src="{{ site.baseurl }}{{ galeria.img }}" loading="lazy" alt="{{ galeria.alt }}">
+    <p>{{galeria.description}}</p>
+  </article>
+  {% endfor %}
+
+  <a class="botones" href="https://wa.me/c/573115245225" title="Carta de la Heladería GurCoff" target="_blank" rel="nofollow">Mirar la carta completa en tu WhatsApp</a>
+
+</section>
+<section class="invitacion">
+  <h2>Deliciosas tardes en San Agustín Huila</h2>
+  <p><a href="/contacto" style="font-weight: 700; color: var(--accion);" title="Página de contacto de la heladería GurCoff"> HAZ CLIC AQUÍ</a> para
+    saber cómo llegar y
+    alegrar la tarde de tus seres amados.</p>
+  <p>Ven y enamórate del <strong>mejor helado suave de San Agustín</strong>, el centro del turismo
+    arqueológico del Huila.</p>
+</section>
+
+<section class="blog-intro">
+  <h2>Visita el magazine de San Agustín Huila</h2>
+  <article>
+    {% assign nuevo = site.posts[0] %}
+    <h3>
+    <a class="botones" href="{{ nuevo.url }}" title="{{ nuevo.title }}">{{ nuevo.title }}</a>
+    </h3>
+    {{nuevo.excerpt}}
+  </article>
+  <article>
+    {% assign nuevo = site.posts[1] %}
+    <h3>
+    <a class="botones" href="{{ nuevo.url }}" title="{{ nuevo.title }}">{{ nuevo.title }}</a>
+    </h3>
+    {{nuevo.excerpt}}
+  </article>
+  <article>
+    {% assign nuevo = site.posts[2] %}
+    <h3>
+    <a class="botones" href="{{ nuevo.url }}" title="{{ nuevo.title }}">{{ nuevo.title }}</a>
+    </h3>
+    {{nuevo.excerpt}}
+  </article>
+</section>

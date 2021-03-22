@@ -1,0 +1,142 @@
+.header-articulo h1 {
+  padding-top: calc(100Vh - 80vh);
+}
+
+.articulo {
+  padding: 0 2rem;
+}
+
+.articulo h2 {
+  line-height: 1.2;
+  margin: 2rem 0;
+  font-size: var(--sizeH2);
+}
+
+.articulo h3{
+  font-size: var(--sizeH3);
+  font-family: var(--fuenteTexto);
+}
+
+.articulo p {
+  margin: 1.5rem 0;
+}
+
+.articulo p img {
+  border-radius: 7px;
+  box-shadow: var(--shadow);
+}
+
+.articulo em {
+  display: inherit;
+  line-height: 1.1;
+}
+
+.articulo a {
+  color: var(--principal);
+}
+
+.articulo li {
+  margin-left: 1rem;
+}
+
+.articulo blockquote {
+  position: relative;
+  display: grid;
+  background: var(--secundario);
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  color: var(--blanco);
+  font-weight: 700;
+  font-size: var(--sizeH3);
+}
+
+.sugerencias {
+  display: grid;
+  grid-gap: 2rem;
+  justify-content: center;
+}
+
+.sugerencias h3 {
+  margin: 0 0 1rem 0;
+  font-size: var(--sizeH3);
+}
+
+.relacionados {
+  width: 300px;
+}
+
+.relacionados img {
+  max-width: 100%;
+}
+
+.sugerencias h4 {
+  font-family: var(--fuenteTexto);
+}
+
+@media screen and (min-width: 600px) {
+  .articulo {
+    padding: 0 4rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  .articulo {
+    width: 80vw;
+    margin: 0 auto;
+  }
+
+  .articulo em {
+    width: 300px;
+  }
+
+  .articulo img,
+  .articulo em {
+    position: relative;
+    overflow: hidden;
+    float: right;
+    margin: 0 0 2rem 2rem;
+  }
+
+  .sugerencias {
+    padding: 0;
+    grid-template-columns: repeat(auto-fill, minmax(300px, auto));
+  }
+
+  .sugerencias h3 {
+    grid-column: span 3;
+    text-align: center;
+    margin: 2rem 0;
+  }
+
+  .relacionados {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+
+  .sugerencias,
+  .comentarios {
+    width: 50vw;
+    margin: 0 auto;
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+  .header-articulo h1 {
+    padding-top: calc(100Vh - 60vh);
+  }
+
+  .articulo {
+    width: 60vw;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .articulo {
+    width: 50vw;
+  }
+}

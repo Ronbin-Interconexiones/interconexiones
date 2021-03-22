@@ -1,0 +1,21 @@
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  background-color: var(--complemento1);
+}
+
+footer a,
+footer p {
+  display: inline-block;
+  font-family: var(--fuenteTexto);
+  font-size: var(--sizeTextos);
+}
+
+footer a {
+  color: var(--principal);
+  margin: 1rem 0.5rem;
+  font-weight: 700;
+}

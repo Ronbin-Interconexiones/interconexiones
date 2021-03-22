@@ -1,0 +1,59 @@
+.contacto li {
+  list-style: none;
+}
+
+.contacto h3 {
+  margin: 1.5rem 0;
+  font-size: var(--sizeH3);
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+.contacto ul {
+  line-height: calc(100% * 2);
+}
+
+.contacto ul li a {
+  text-decoration: underline;
+  text-decoration-color: var(--secundario);
+  text-decoration-thickness: 0.2rem;
+}
+
+.nosotros {
+  padding: 0 2rem;
+}
+
+.nosotros p,
+.nosotros q,
+.nosotros figure {
+  margin: 1.5rem 0;
+}
+
+.nosotros h2 {
+  margin: 2rem 0;
+}
+
+.nosotros figure {
+  text-align: center;
+}
+
+.nosotros figure img {
+  max-width: 100%;
+  border-radius: 5px;
+  box-shadow: var(--shadow);
+}
+
+.nosotros q {
+  font-size: var(--sizeH3);
+  font-family: var(--fuenteTitulos);
+  color: var(--complemento2);
+  line-height: 1.1;
+}
+
+@media screen and (min-width: 992px){
+  .contacto,
+  .nosotros {
+    width: 50vw;
+    margin: 0 auto
+  }
+}

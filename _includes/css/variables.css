@@ -1,0 +1,29 @@
+:root {
+
+  /*** COLORES ***/
+  /* rgb */
+  --azul: #056a9eff;
+  --gris1: rgb(208, 207, 207);
+  --gris2: rgb(89, 89, 89);
+  --gris3: rgba(64, 64, 64, 1);
+  --negro1: #1c1d21ff;
+  --negro2: #040404ff;
+  --shadow: 0 2px 5px rgba(28, 29, 33, 0.2);
+  --fondo1: rgba(80, 80, 80, 0.3);
+  --fondo2: rgb(120, 120, 120, 0.3);
+  --fondo3: rgb(160, 160, 160, 0.3);
+  --fondo4: rgb(200, 200, 200, 0.3);
+
+  /* hexadecimal */
+  --blanco: #FEFEFE;
+  --grisRGBA: rgba(208, 207, 207, 0.5);
+
+  /*** FUENTES ***/
+  --fuenteTexto: 'Encode Sans', sans-serif;
+  --fuenteTitulo: 'Roboto Slab', serif;
+
+  --sizeH1: 2.223rem;
+  --sizeH2: 1.875rem;
+  --sizeH3: 1.5rem;
+  --sizeTexto: 18px;
+}
