@@ -7,21 +7,17 @@ description: Servicio de internet de alta velocidad para las necesidades de tu f
   <!-- Seccion1 -->
   <a href="#seccion1" title="Link sección de servicios" class="seccion1">
     <h1>Interconexiones</h1>
-    <h2>Pitalito Huila</h2>
   </a>
   <section class="light-box" id="seccion1" >
     {% include servicios.html %}
-    <input type="button" onclick="history.back()" name="Atrás" value="<" class="close">
+    <input type="button" onclick="history.back()" name="Atrás" value="<">
   </section>
   <!-- Seccion2 -->
   <a href="#seccion2" class="seccion2">
     <h2>Nuestros Clientes</h2>
   </a>
   <section class="light-box" id="seccion2">
-    <div class="portafolio">
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi dignissimos quae animi eius beatae nulla velit
-        perspiciatis sequi natus eum, ad, earum dolores sint obcaecati id perferendis inventore aperiam sit.</p>
-    </div>
+    {% include portafolio.html %}
     <input type="button" onclick="history.back()" name="Atrás" value="<" class="close">
   </section>
   <!-- Seccion3 -->
@@ -29,10 +25,7 @@ description: Servicio de internet de alta velocidad para las necesidades de tu f
     <h2>Trabajemos Juntos</h2>
   </a>
   <section class="light-box" id="seccion3">
-    <div class="contacto">
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi dignissimos quae animi eius beatae nulla velit
-        perspiciatis sequi natus eum, ad, earum dolores sint obcaecati id perferendis inventore aperiam sit.</p>
-    </div>
+    {% include contacto.html %}
     <input type="button" onclick="history.back()" name="Atrás" value="<" class="close">
   </section>
   <!-- Seccion4 -->
@@ -40,10 +33,7 @@ description: Servicio de internet de alta velocidad para las necesidades de tu f
     <h2>Condiciones y términos legales</h2>
   </a>
   <section class="light-box" id="seccion4">
-    <div class="legal">
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi dignissimos quae animi eius beatae nulla velit
-        perspiciatis sequi natus eum, ad, earum dolores sint obcaecati id perferendis inventore aperiam sit.</p>
-    </div>
+    {% include condiciones.html %}
     <input type="button" onclick="history.back()" name="Atrás" value="<" class="close">
   </section>
 </main>
