@@ -1,0 +1,29 @@
+baseurl: ''
+url: 'https://gurcoff.com/'
+name: Heladería GurCoff
+author: Julian Franco
+# email: info@enpitalito.com
+yotube: https://www.youtube.com/channel/UCiXWpAvZiAxwv7uzBGBagwQ?view_as=subscriber
+facebook: https://facebook.com/gurcoff
+instagram: https://instagram.com/gurcoff
+tripadvisor: https://www.tripadvisor.co/Restaurant_Review-g445060-d19216448-Reviews-Gurcoff-San_Agustin_Huila_Department.html?m=19905
+whatsapp: https://wa.me/573115245225
+minegocio: https://g.page/gurcoff/review?rc
+# tel: tel://+573115245225
+maps: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.658512949201!2d-76.27687978472619!3d1.885333460144882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e257ba38eb5671d%3A0xabb8c090758c852!2sGurCoff!5e0!3m2!1ses-419!2sco!4v1581913230029!5m2!1ses-419!2sco
+
+permalink: /:categories/:title/
+
+markdown: kramdown
+
+keep_files: [/img]
+
+compress_html:
+    clippings: []
+    comments: []
+    endings: []
+    ignore:
+    envs: []
+    blanklines: false
+    profile: false
+    startings: []
