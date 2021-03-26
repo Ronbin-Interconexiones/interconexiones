@@ -11,17 +11,15 @@
 }
 
 .principal a {
-  width: 50vw;
   padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  transition: all .3s ease-in;
+  transition: all 0.3s ease-in;
   overflow: hidden;
   color: var(--negro1);
   text-transform: uppercase;
   text-align: center;
-  font-size: calc(100% - 20%);
 }
 
 .seccion1 {
@@ -46,14 +44,14 @@
 }
 
 .principal a:hover {
-  background-color: transparent;
+  background-color: rgba(5, 106, 158, 0.5);
+  color: var(--gris3);
 }
 
 .principal a:hover h1,
 .principal a:hover a,
-.principal a:hover p {
-  letter-spacing: 0.2px;
-  transition: all 0.5s ease-in;
+.principal a:hover h2 {
+  transition: all 0.3s ease-in;
 }
 
 .light-box {
@@ -69,7 +67,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  transition: transform 0.55s ease-in-out;
+  transition: transform 0.3s ease-in-out;
   transform: scale(0);
   overflow: scroll;
 }
@@ -83,8 +81,7 @@
 
 .light-box p{ margin: 1rem 0;}
 
-.close {
-  display: block;
+.light-box input {
   position: absolute;
   top: 5px;
   right: 10px;
@@ -101,7 +98,7 @@
 
 .boton-footer {
   width: 40vw;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 30vw;
   background-color: var(--gris3);

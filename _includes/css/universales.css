@@ -39,6 +39,10 @@ h3{
   font-family: var(--fuenteTitulo);
 }
 
+h1{font-size: var(--sizeH1);}
+h2{font-size: var(--sizeH2);}
+h3{font-size: var(--sizeH3);}
+
 button {
   margin: 2rem 0;
 }
