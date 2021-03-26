@@ -44,7 +44,7 @@
   font-size: calc(100% * 0.9);
 }
 
-.principal a h2{
+.principal a h2 {
   font-size: 90%;
 }
 
@@ -53,11 +53,7 @@
   color: var(--gris3);
 }
 
-.principal a:hover h1,
-.principal a:hover a,
-.principal a:hover h2 {
-  transition: all 0.3s ease-in;
-}
+
 
 .light-box {
   position: absolute;
@@ -82,9 +78,13 @@
   top: 0;
 }
 
-.light-box h3{margin: 2rem 0;}
+.light-box h3 {
+  margin: 2rem 0;
+}
 
-.light-box p{ margin: 1rem 0;}
+.light-box p {
+  margin: 1rem 0;
+}
 
 .light-box input {
   position: absolute;
@@ -112,35 +112,58 @@
   color: var(--blanco);
   text-align: center;
   cursor: pointer;
+  opacity: 0.7;
+}
+
+.boton-footer p {
+  font-size: 70%;
+}
+
+.boton-footer:hover {
+  opacity: 1;
 }
 
 @media screen and (min-width: 600px) {
-  .principal a{
+  .principal a {
     padding: 3rem;
   }
-   .light-box{
-     padding: 2rem;
-   }
+
+  .light-box {
+    padding: 2rem;
+  }
 }
 
 @media screen and (min-width: 767px) {
-  .boton-footer{
+
+  .principal a h1,
+  .principal a a,
+  .principal a h2 {
+    transition: all 0.3s ease-in;
+  }
+
+  .principal a:hover h1,
+  .principal a:hover a,
+  .principal a:hover h2 {
+    font-size: 120%;
+  }
+
+  .boton-footer {
     width: 20vw;
     left: 40vw;
   }
 
-  .light-box{
+  .light-box {
     padding: 4rem 8rem;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .boton-footer{
+  .boton-footer {
     width: 10vw;
     left: 45vw;
   }
 
-  .light-box{
+  .light-box {
     padding: 4rem 20rem;
   }
 }
