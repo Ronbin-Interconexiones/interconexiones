@@ -4,26 +4,4 @@
 
 {% include css/universales.css %}
 
-{% include css/nav.css %}
-
-{% include css/header.css %}
-
 {% include css/principal.css %}
-
-{% include css/boton.css %}
-
-{% include css/footer.css %}
-
-{% include css/articulo.css %}
-
-{% include css/toc.css %}
-
-{% include css/blog.css %}
-
-{% include css/buscador.css %}
-
-{% include css/publicidad.css %}
-
-{% include css/share.css %}
-
-{% include css/contacto.css %}
