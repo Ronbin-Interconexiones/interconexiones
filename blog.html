@@ -4,10 +4,8 @@ title: En San Agustín tienes mucho por hacer
 description: Entérate de los lugares, las novedades y las experiencias que vivimos en San Agustín Huila. Todo desde las vivencias de tu heladería favorita.
 img: img/magazine/magazine.webp
 ---
-{% include header.html %}
 <section class="magazine">
   <p>{{ page.description }}</p>
-  {% include search.html %}
   {% for post in site.posts %}
   <article>
     <h2>
