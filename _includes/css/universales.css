@@ -7,6 +7,8 @@
 
 html {
   line-height: 1.5;
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%; /* 2 */
   scroll-behavior: smooth;
 }
 
@@ -14,7 +16,6 @@ body {
   margin: 0;
   background-color: var(--blanco);
   font-family: var(--fuenteTexto);
-  font-size: var(--sizeTexto);
   color: var(--negro1);
 }
 
@@ -42,6 +43,7 @@ h3{
 h1{font-size: var(--sizeH1);}
 h2{font-size: var(--sizeH2);}
 h3{font-size: var(--sizeH3);}
+p{font-size: var(--sizeTexto);}
 
 button {
   margin: 2rem 0;

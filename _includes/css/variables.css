@@ -22,8 +22,8 @@
   --fuenteTexto: 'Encode Sans', sans-serif;
   --fuenteTitulo: 'Roboto Slab', serif;
 
-  --sizeH1: 2.223rem;
-  --sizeH2: 1.875rem;
-  --sizeH3: 1.5rem;
+  --sizeH1: 2em;
+  --sizeH2: 1.7em;
+  --sizeH3: 1.5em;
   --sizeTexto: 18px;
 }
