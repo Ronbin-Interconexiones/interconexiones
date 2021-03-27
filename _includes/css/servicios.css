@@ -1,5 +1,9 @@
+#servicios{
+  display: grid;
+}
+
 #servicios > img{
-  width: 100%;
+  justify-self: center;
 }
 
 #servicios ul{
@@ -32,6 +36,7 @@
   padding: 1rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: space-around;
   text-align: center;
   background: var(--gris1);
@@ -41,7 +46,7 @@
 
 .institucionalidad hr{
   width: 30vw;
-  margin: 0.5rem auto;
+  margin: 0.5rem;
   height: 2px;
   background: var(--gris2);
 }
@@ -56,7 +61,7 @@
   }
   
   #servicios > img{
-    width: 40vw;
+    width: 20vw;
     justify-self: center;
   }
 
