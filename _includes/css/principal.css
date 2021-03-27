@@ -53,8 +53,6 @@
   color: var(--gris3);
 }
 
-
-
 .light-box {
   position: absolute;
   top: 0;
@@ -64,10 +62,6 @@
   padding: 1rem;
   background: var(--blanco);
   z-index: 3;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
   transition: transform 0.3s ease-in-out;
   transform: scale(0);
   overflow: scroll;
@@ -75,30 +69,30 @@
 
 .light-box:target {
   transform: scale(1);
-  top: 0;
 }
 
 .light-box h3 {
   margin: 2rem 0;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .light-box p {
-  margin: 1rem 0;
+  margin: 3rem 0;
 }
 
 .light-box input {
   position: absolute;
   top: 5px;
   right: 10px;
-  margin: 3px;
+  padding: 0 1rem;
   background: var(--azul);
-  color: var(--negro2);
-  width: 40px;
+  color: var(--blanco);
   height: 40px;
   text-align: center;
-  line-height: 40px;
   font-weight: 700;
-  border-radius: 50%;
+  border-radius: 5px;
+  box-shadow: var(--shadow);
 }
 
 .boton-footer {
