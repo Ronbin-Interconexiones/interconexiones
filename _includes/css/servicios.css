@@ -2,17 +2,6 @@
   width: 100%;
 }
 
-#servicios a{
-  background: var(--azul);
-  width: 70vw;
-  height: auto;
-  padding: 0.5rem 1.5rem;
-  border-radius: 7px;
-  box-shadow: var(--shadow);
-  color: var(--blanco);
-  margin: 2rem auto;
-}
-
 #servicios ul{
   padding: 0 2rem;
 }
@@ -36,4 +25,34 @@
 
 .servicios div p{
   margin: 0;
+}
+
+.institucionalidad{
+  margin: 2rem auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  background: var(--gris1);
+  border-radius: 5px;
+  box-shadow: var(--shadow);
+}
+
+.institucionalidad hr{
+  width: 30vw;
+  margin: 0.5rem auto;
+  height: 2px;
+  background: var(--gris2);
+}
+
+.institucionalidad p{
+  margin: 0;
+}
+
+@media screen and (min-width: 600px){
+  #servicios img{
+    width: 50%;
+  }
+
 }

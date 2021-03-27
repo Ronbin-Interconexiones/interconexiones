@@ -42,7 +42,7 @@ h3{
 
 h1{font-size: var(--sizeH1);}
 h2{font-size: var(--sizeH2);}
-h3{font-size: var(--sizeH3);}
+h3, h4{font-size: var(--sizeH3);}
 p{font-size: var(--sizeTexto);}
 
 button {
@@ -56,6 +56,20 @@ img {
 [hidden] {
   display: none;
 }
+
+.cta{
+  display: block;
+  background: var(--azul);
+  width: 70vw;
+  height: auto;
+  padding: 0.5rem 1.5rem;
+  border-radius: 7px;
+  box-shadow: var(--shadow);
+  color: var(--blanco);
+  margin: 2rem auto;
+  text-align: center;
+}
+
 
 @media only screen and (min-width: 600px) {
 

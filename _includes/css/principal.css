@@ -9,7 +9,10 @@
   background-size: 10rem;
 }
 
-.principal a {
+.seccion1,
+.seccion2,
+.seccion3,
+.seccion4 {
   height: 50vh;
   padding: 1rem;
   display: flex;

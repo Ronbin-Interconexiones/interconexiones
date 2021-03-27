@@ -1,0 +1,20 @@
+#normatividad svg{
+  width: 100%;
+}
+
+.regulaciones div img{
+  max-width: 100%;
+}
+
+.regulaciones ul{
+  padding: 0 2rem;
+}
+
+.regulaciones ul li{
+  margin: 0.7rem 0;
+}
+
+.regulaciones ul li a{
+  font-weight: 700;
+  color: var(--azul);
+}

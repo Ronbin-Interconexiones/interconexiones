@@ -1,0 +1,18 @@
+.testimonios{
+  display: grid;
+  grid-gap: 1rem;
+}
+
+.testimonios div{
+  padding: 1rem;
+  margin-bottom: 2rem;
+  background: var(--gris1);
+  border-radius: 5px;
+  box-shadow: var(--shadow);
+}
+
+.testimonios div h4 {
+  margin: 1rem;
+}
+
+.testimonios div p{margin: 0;}

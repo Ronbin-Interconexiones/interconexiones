@@ -1,0 +1,26 @@
+footer{
+  display: grid;
+  grid-gap: 2rem;
+  border-radius: 5px;
+  background: var(--gris2);
+  box-shadow: var(--shadow);
+}
+
+footer div h3{
+  text-align: left;
+  color: var(--blanco);
+}
+
+footer div a,
+footer div p{
+  height: auto;
+  width: 100%;
+  list-style: none;
+  color: var(--blanco);
+  display: block;
+  padding: 1rem;
+}
+
+footer div a{
+  border-bottom: 1px solid var(--blanco);
+}
