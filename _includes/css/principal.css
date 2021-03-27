@@ -51,7 +51,10 @@
   font-size: 90%;
 }
 
-.principal a:hover {
+.principal .seccion1:hover,
+.principal .seccion2:hover,
+.principal .seccion3:hover,
+.principal .seccion4:hover{
   background-color: rgba(5, 106, 158, 0.5);
   color: var(--gris3);
 }
@@ -121,7 +124,10 @@
 }
 
 @media screen and (min-width: 600px) {
-  .principal a {
+  .principal .seccion1,
+  .principal .seccion2,
+  .principal .seccion3,
+  .principal .seccion4{
     padding: 3rem;
   }
 
@@ -133,7 +139,7 @@
 @media screen and (min-width: 767px) {
 
   .principal a h1,
-  .principal a a,
+  .principal a,
   .principal a h2 {
     transition: all 0.3s ease-in;
   }

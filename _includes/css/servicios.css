@@ -1,4 +1,4 @@
-#servicios img{
+#servicios > img{
   width: 100%;
 }
 
@@ -19,7 +19,7 @@
 }
 
 .servicios div h4{
-  margin: 0.7rem;
+  margin: 0.7rem 0;
   color: var(--gris3);
 }
 
@@ -51,8 +51,22 @@
 }
 
 @media screen and (min-width: 600px){
-  #servicios img{
-    width: 50%;
+  #servicios{
+    display: grid;
+  }
+  
+  #servicios > img{
+    width: 40vw;
+    justify-self: center;
   }
 
+  .servicios{
+    grid-template-columns: repeat(auto-fit, minmax(auto, 120px));
+  }
+}
+
+@media screen and (min-width: 767px){
+  .institucionalidad{
+    padding: 2rem;
+  }
 }

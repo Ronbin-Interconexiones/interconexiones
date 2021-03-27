@@ -6,6 +6,10 @@ footer{
   box-shadow: var(--shadow);
 }
 
+footer div{
+  display: grid;
+}
+
 footer div h3{
   text-align: left;
   color: var(--blanco);
@@ -18,9 +22,28 @@ footer div p{
   list-style: none;
   color: var(--blanco);
   display: block;
-  padding: 1rem;
+  padding: 1rem 0;
 }
+
+.copyright p{margin: 0;}
 
 footer div a{
   border-bottom: 1px solid var(--blanco);
+}
+
+footer div img{
+  width: 15vw;
+  justify-self: center;
+}
+
+@media screen and (min-width: 767px){
+  footer{
+    grid-template-columns: repeat(auto-fit, minmax(auto, 200px));
+    justify-content: center;
+    grid-gap: 5rem 3rem;
+  }
+
+  .copyright{
+    grid-column: span 2;
+  }
 }
