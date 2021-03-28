@@ -10,6 +10,8 @@
 
 {% include css/testimonios.css %}
 
+{% include css/contacto.css %}
+
 {% include css/normatividad.css %}
 
 {% include css/footer.css %}
