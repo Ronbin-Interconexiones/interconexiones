@@ -8,7 +8,7 @@
   --gris3: #404040;
   --negro1: #1c1d21ff;
   --negro2: #040404ff;
-  --shadow: 0 3px 5px rgba(28, 29, 33, 0.4);
+  --shadow: 1px 3px 5px rgba(28, 29, 33, 0.3);
   --fondo1: rgba(80, 80, 80, 0.3);
   --fondo2: rgb(120, 120, 120, 0.3);
   --fondo3: rgb(160, 160, 160, 0.3);
@@ -19,8 +19,8 @@
   --grisRGBA: rgba(208, 207, 207, 0.5);
 
   /*** FUENTES ***/
-  --fuenteTexto: 'Encode Sans', sans-serif;
-  --fuenteTitulo: 'Roboto Slab', serif;
+  --fuenteTitulo: 'Encode Sans', sans-serif;
+  --fuenteTexto: 'Roboto Slab', serif;
 
   --sizeH1: 2em;
   --sizeH2: 1.7em;

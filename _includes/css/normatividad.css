@@ -1,9 +1,19 @@
-#normatividad svg{
-  width: 100%;
+#normatividad h2{
+  text-align: center;
+  margin: 1rem;
 }
 
-.regulaciones div img{
+.regulaciones{
+  display: grid;
+  grid-gap: 2rem;
+}
+
+.regulaciones p{
+  margin: 0;
+}
+.regulaciones img{
   max-width: 100%;
+  justify-self: center;
 }
 
 .regulaciones ul{

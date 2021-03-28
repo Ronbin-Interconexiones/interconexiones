@@ -66,12 +66,29 @@ img {
   border-radius: 7px;
   box-shadow: var(--shadow);
   color: var(--blanco);
-  margin: 2rem auto;
+  margin: 1.5rem auto 2rem;
   text-align: center;
+  font-family: var(--fuenteTitulo);
+}
+
+.articulo{
+  padding: 2rem;
 }
 
 @media screen and (min-width: 600px){
   .cta {
     width: 50vw;
+  }
+}
+
+@media screen and (min-width: 767px){
+  .cta {
+    width: 30vw;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  .cta {
+    width: 20vw;
   }
 }
