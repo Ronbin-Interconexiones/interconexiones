@@ -1,10 +1,10 @@
 baseurl: ''
-url: 'https://gurcoff.com/'
-name: Heladería GurCoff
-author: Julian Franco
-# email: info@enpitalito.com
-whatsapp: https://wa.me/573115245225
-tel: tel:+573115245225
+url: 'https://interconexiones.co/'
+name: Interconexiones
+author: Robinson Salazar
+email: interconexionesmys@gmail.com
+whatsapp: https://wa.me/573502517574
+tel: tel:+573502517574
 
 permalink: /:categories/:title/
 
