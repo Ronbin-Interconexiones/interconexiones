@@ -1,0 +1,391 @@
+/* NAV */
+#floating-button {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: var(--accion);
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  cursor: pointer;
+  box-shadow: 0px 2px 5px #666;
+}
+
+.plus {
+  color: white;
+  position: absolute;
+  top: 0;
+  display: block;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  line-height: 55px;
+  font-size: 38px;
+  font-family: 'Roboto';
+  font-weight: 300;
+  -webkit-animation: plus-out 0.3s;
+          animation: plus-out 0.3s;
+  transition: all 0.3s;
+}
+
+#container-floating {
+  position: fixed;
+  width: 70px;
+  height: 70px;
+  bottom: 15px;
+  right: 15px;
+  z-index: 50;
+}
+
+#container-floating:hover {
+  height: 400px;
+  width: 90px;
+  padding: 30px;
+}
+
+#container-floating:hover .plus {
+  -webkit-animation: plus-in 0.15s linear;
+          animation: plus-in 0.15s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.edit {
+  position: absolute;
+  top: 0;
+  display: block;
+  bottom: 0;
+  left: 0;
+  display: block;
+  right: 0;
+  padding: 0;
+  opacity: 0;
+  margin: auto;
+  line-height: 65px;
+  transform: rotateZ(-70deg);
+  transition: all 0.3s;
+  -webkit-animation: edit-out 0.3s;
+          animation: edit-out 0.3s;
+  width: 100%;
+}
+
+.svg-icon {
+  width: 90%;
+  height: 90%;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: white;
+}
+
+.svg-icon circle {
+  stroke: white;
+  stroke-width: 1;
+}
+
+#container-floating:hover .edit {
+  -webkit-animation: edit-in 0.2s;
+          animation: edit-in 0.2s;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes edit-in {
+  from {
+    opacity: 0;
+    transform: rotateZ(-70deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: rotateZ(0deg);
+  }
+}
+
+@keyframes edit-in {
+  from {
+    opacity: 0;
+    transform: rotateZ(-70deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: rotateZ(0deg);
+  }
+}
+
+@-webkit-keyframes edit-out {
+  from {
+    opacity: 1;
+    transform: rotateZ(0deg);
+  }
+
+  to {
+    opacity: 0;
+    transform: rotateZ(-70deg);
+  }
+}
+
+@keyframes edit-out {
+  from {
+    opacity: 1;
+    transform: rotateZ(0deg);
+  }
+
+  to {
+    opacity: 0;
+    transform: rotateZ(-70deg);
+  }
+}
+
+@-webkit-keyframes plus-in {
+  from {
+    opacity: 1;
+    transform: rotateZ(0deg);
+  }
+
+  to {
+    opacity: 0;
+    transform: rotateZ(180deg);
+  }
+}
+
+@keyframes plus-in {
+  from {
+    opacity: 1;
+    transform: rotateZ(0deg);
+  }
+
+  to {
+    opacity: 0;
+    transform: rotateZ(180deg);
+  }
+}
+
+@-webkit-keyframes plus-out {
+  from {
+    opacity: 0;
+    transform: rotateZ(180deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: rotateZ(0deg);
+  }
+}
+
+@keyframes plus-out {
+  from {
+    opacity: 0;
+    transform: rotateZ(180deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: rotateZ(0deg);
+  }
+}
+
+.nds {
+  background: var(--blanco);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  place-content: center;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 300;
+  transform: scale(0);
+  cursor: pointer;
+  border: 2px solid var(--principal);
+}
+
+.nd1 {
+  right: 25px;
+  bottom: 100px;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+  -webkit-animation: bounce-out-nds 0.3s linear;
+          animation: bounce-out-nds 0.3s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.nd3 {
+  right: 25px;
+  bottom: 160px;
+  -webkit-animation-delay: 0.15s;
+          animation-delay: 0.15s;
+  -webkit-animation: bounce-out-nds 0.15s linear;
+          animation: bounce-out-nds 0.15s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.nd4 {
+  right: 25px;
+  bottom: 220px;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+  -webkit-animation: bounce-out-nds 0.1s linear;
+          animation: bounce-out-nds 0.1s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.nd5 {
+  background-image: url({{site.baseurl}}/img/favicon/android-icon-48x48.png);
+  background-size: 90%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  right: 25px;
+  bottom: 280px;
+  -webkit-animation-delay: 0.08s;
+          animation-delay: 0.08s;
+  -webkit-animation: bounce-out-nds 0.1s linear;
+          animation: bounce-out-nds 0.1s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes bounce-nds {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes bounce-nds {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@-webkit-keyframes bounce-out-nds {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+
+@keyframes bounce-out-nds {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+
+#container-floating:hover .nds {
+  -webkit-animation: bounce-nds 0.1s linear;
+          animation: bounce-nds 0.1s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#container-floating:hover .nd3 {
+  -webkit-animation-delay: 0.08s;
+          animation-delay: 0.08s;
+}
+
+#container-floating:hover .nd4 {
+  -webkit-animation-delay: 0.15s;
+          animation-delay: 0.15s;
+}
+
+#container-floating:hover .nd5 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.letter {
+  font-size: 23px;
+  font-family: 'Roboto';
+  color: white;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0;
+  top: 0;
+  bottom: 0;
+  text-align: center;
+  line-height: 40px;
+}
+
+.reminder {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  height: 50%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  line-height: 40px;
+}
+
+.profile {
+  border-radius: 50%;
+  width: 40px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 20px;
+}
+/* FIN NAV */
+
+.header-home{
+  position: relative;
+  width: 100%;
+  height: 70vh;
+}
+
+.header-home img{
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 38% 62% 0% 100% / 58% 0% 100% 42% ;
+  width: 50vw;
+  height: 70vh;
+}
+
+.header-home div{
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0 clamp(1rem, 10vw, 12rem);
+}
+
+.header-home div h2,
+.header-home div h1{
+  position: relative;
+  width: 40vw;
+}
