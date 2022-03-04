@@ -1,0 +1,72 @@
+---
+layout: default
+title: Interconexiones
+description: Servicio de internet de alta velocidad para las necesidades de tu familia y tu empresa, evento, negocio u oficina. Pregunta por nuestros planes.
+---
+{% include header.html %}
+<main class="servicios">
+  <h1>Interconexiones - Redes e Internet de alta calidad</h1>
+
+  <section class="servicio">
+    {% for servicio in site.data.servicios %}
+    <div>
+      {{ servicio.img }}
+      <h4>{{ servicio.h4 }}</h4>
+      <p>{{ servicio.p }}</p>
+    </div>
+    {% endfor %}
+  </section>
+
+</main>
+<section class="beneficios">
+  <img src="{{ '/img/estudiante.jpg' | relative_url }}" alt="Mujer utilizando internet de Interconexiones | Foto de Escuela creado por artursafronovvvv - www.freepik.es" loading="lazy">
+  <div>
+    <h2>Soluciones profesionales en redes</h2>
+    <p>¿Necesitas conectar <strong>tu propia red</strong>? ¿O quizás solo necesitas <strong>internet para tu casa o negocio</strong>? Mira porqué puedes confiar en nosotros:</p>
+    <ul class="beneficios-lista">
+      <li><span>1</span>
+        <p> Con más de 20 años de experiencia, podemos garantizarte nuestros servicios.</p>
+      </li>
+      <li><span>2</span>
+        <p> Tenemos recomendaciones de instituciones gubernamentales, y grandes empresas como .</p>
+      </li>
+      <li><span>3</span>
+        <p> Atención al cliente y posventa profesional, constante y amable.</p>
+      </li>
+      <li><span>4</span>
+        <p> El mejor respaldo tecnológico para conexiones estables y veloces.</p>
+      </li>
+    </ul>
+    <a href="{{'/contacto' | relative_url}}" class="cta">Trabajemos juntos</a>
+  </div>
+</section>
+
+<section class="nosotros-home">
+  <div>
+    <h2>En Interconexiones te llevamos la calidad de servicio que tú necesitas</h2>
+    <p>¿Necesitas una conexión fiable y rápida? Somos expertos en lograr clientes satisfechos con sus redes, que disfrutan de su tecnología, y que saben que pueden contar siempre con nosotros.</p>
+    <q>Desde el año 2010, seguimos siendo la mejor opción para conectar tu vida con el resto del mundo</q>
+  </div>
+  <img src="{{ '/img/footer-internet.png' | relative_url }}" alt="Mujer utilizando internet de Interconexiones | Foto de Escuela creado por artursafronovvvv - www.freepik.es" loading="lazy">
+</section>
+
+<section class="clientes">
+  <h2>Nuestra mejor recomendación son nuestros clientes</h2>
+  <div>
+    <ul>
+      {% for cliente in site.data.testimonios %}
+      <li class="cliente">
+        {{ cliente.img }}
+        <h3>{{ cliente.h3 }}</h3>
+        <p>{{ cliente.p }}</p>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+<aside class="home-cta">
+  <p>En Interconexiones nos preocupamos por tu seguridad y la de tus seres amados. Por esto, cumplimos con la normatividad y regulaciones legales del <strong>Ministerio de Tecnologías de la Información y las Comunicaciones</strong>. Visita nuestra sección de Normatividad para saber más.</p>
+  <a href="{{ '/legal' | relative_url }}" class="cta">Normatividad Interconexiones</a>
+</aside>
+
+{% include footer.html %}
