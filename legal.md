@@ -2,7 +2,7 @@
 layout: articulo
 title: Sección Legal de la página web de Interconexiones
 h1: Términos legales del sitio web y normas del MinTic
-img: /img/legal.jpg
+img: /img/legal.webp
 description: En Interconexiones cumplimos con todas las condiciones y regulaciones legales, para que confíes totalmente en nuestros servicios.
 ---
 Interconexiones es regulado por el **Ministerio de Tecnologías de la Información y las Comunicaciones** de Colombia. Cumplimos con todos los requisitos para la prestación de nuestros servicios, para la comunicación de la información que necesitas para tu protección y para el uso de nuestra página web.
