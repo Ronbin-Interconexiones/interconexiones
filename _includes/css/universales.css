@@ -1,0 +1,294 @@
+/*** Formatos Universales ***/
+:root {
+
+  /*** COLORES ***/
+  --principal: #028fc4;
+  --secundario: #33a8bf;
+  --accion: #dc1e21;
+  --complemento: #ffef34;
+  --gris1: rgb(175, 175, 175);
+  --gris2: #343636;
+  --fuentes: #000f14;
+  --shadow: 0 0 14px 5px rgba(52, 54, 54, 0.1), 0 4px 0 var(--principal);
+  --blanco: #fff;
+  --grisRGBA: rgba(52, 54, 54, 0.7);
+  /*** FUENTES ***/
+  --fuenteTitulo: 'Montserrat', sans-serif;
+  --fuenteTexto: 'Hind Madurai', sans-serif;
+  --sizeH1: clamp(24px, (1.5rem + 1vw) * 1.25, 2.5rem);
+  --sizeH2: clamp(20px, (1.3rem + 1vw) * 1.2, 2rem);
+  --sizeH3: clamp(18px, (1.2rem + 1vw) * 1.2, 1.5rem);
+  --sizeTexto: 18px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%
+}
+
+body {
+  color: var(--fuentes);
+  font-family: var(--fuenteTexto);
+  background-color: var(--blanco);
+}
+
+main {
+  display: block
+}
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em
+}
+
+a {
+  background-color: transparent;
+  text-decoration: underline;
+  text-decoration-thickness: 2.5px;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted
+}
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em
+}
+
+small {
+  font-size: 80%
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline
+}
+
+sub {
+  bottom: -.25em
+}
+
+sup {
+  top: -.5em
+}
+
+img {
+  border-style: none
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0
+}
+
+button,
+input {
+  overflow: visible
+}
+
+button,
+select {
+  text-transform: none
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText
+}
+
+fieldset {
+  padding: .35em .75em .625em
+}
+
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal
+}
+
+progress {
+  vertical-align: baseline
+}
+
+textarea {
+  overflow: auto
+}
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  padding: 0
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto
+}
+
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px
+}
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit
+}
+
+details {
+  display: block
+}
+
+summary {
+  display: list-item
+}
+
+template {
+  display: none
+}
+
+[hidden] {
+  display: none
+}
+
+b,
+strong {
+  font-weight: 700;
+}
+
+span {
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--fuenteTitulo);
+}
+
+h1 {
+  font-size: var(--sizeH1);
+}
+
+h2 {
+  font-size: var(--sizeH2);
+}
+
+h3,
+h4 {
+  font-size: var(--sizeH3);
+}
+
+p {
+  font-size: var(--sizeTexto);
+}
+
+img {
+  border-style: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+.cta {
+  display: block;
+  background: var(--accion);
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  padding: 0.7rem 1.5rem;
+  line-height: 1.5;
+  border-radius: 7px;
+  box-shadow: 0 3px 3px rgba(52, 54, 54, 0.5);
+  color: var(--blanco);
+  text-align: center;
+  font-family: var(--fuenteTitulo);
+  text-decoration: none;
+  -webkit-animation: scale-up-ver-center 0.4s ease-out 0.5s 5 alternate both;
+	        animation: scale-up-ver-center 0.4s ease-out 0.5s 5 alternate both;
+}
+
+@-webkit-keyframes scale-up-ver-center {
+  0% {
+    -webkit-transform: scaleY(0.4);
+            transform: scaleY(0.4);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+}
+@keyframes scale-up-ver-center {
+  0% {
+    -webkit-transform: scaleY(0.4);
+            transform: scaleY(0.4);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+}
+
+.servicios,
+.beneficios,
+.articulo {
+  padding: 7rem clamp(1rem, 5vw, 7rem);
+}
+
+.header-home img,
+.beneficios img,
+.nosotros-home img,
+.articulo img:not(.articulo a img) {
+  -o-object-fit: cover;
+     object-fit: cover;
+  box-shadow: 0 16px 2px rgba(2, 143, 196, 0.7);
+}
